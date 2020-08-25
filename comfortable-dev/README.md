@@ -48,27 +48,27 @@
 * 此时在build的时候就发现了多了页面，自动也会引入我们的js
 * 再来玩玩热更新，安装`webpack-dev-server`
 * 新增热更新配置
-```
-var HtmlWebpackPlugin = require("html-webpack-plugin");
-var path = require("path");
+  ```
+  var HtmlWebpackPlugin = require("html-webpack-plugin");
+  var path = require("path");
 
-module.exports = {
-  mode: "development",
-  entry: "./src/js/index.js",
-  output: {
-    path: path.resolve(__dirname, "dist"),
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.html",
-    }),
-  ],
-  devServer: {
-    contentBase: "./dist",
-    open: true
-  },
-};
-```  
+  module.exports = {
+    mode: "development",
+    entry: "./src/js/index.js",
+    output: {
+      path: path.resolve(__dirname, "dist"),
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: "./src/index.html",
+      }),
+    ],
+    devServer: {
+      contentBase: "./dist",
+      open: true
+    },
+  };
+  ```  
 * package.json新增dev命令
   ```
   {
