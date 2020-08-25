@@ -1,0 +1,6 @@
+@mixin my-div($width, $height, $backgroundColor) {
+  width: $width;
+  height: $height;
+  background-color: $backgroundColor;
+  margin: 10px 0;
+}

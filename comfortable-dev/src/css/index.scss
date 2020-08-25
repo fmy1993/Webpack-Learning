@@ -1,3 +1,4 @@
+@import './util.scss';
 div {
   width: 300px;
   height: 300px;
@@ -12,4 +13,13 @@ div {
       background-color: blue;
     }
   }
+}
+.a {
+  @include my-div(100px, 100px, red)
+}
+.b {
+  @include my-div(200px, 200px, green)
+}
+.c {
+  @include my-div(300px, 300px, blue)
 }
