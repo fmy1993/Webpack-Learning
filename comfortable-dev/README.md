@@ -8,9 +8,9 @@
 
 * 复制黏贴配置，找准[官网](https://www.webpackjs.com/)
 
-* 补充
- * 图片和字体文件可以使用file-loader
- * url-loader可以设置limit的大小，将图片转为base64
+* 补充这个案例没有用到的loader
+  * 图片和字体文件可以使用file-loader
+  * url-loader可以设置limit的大小，将图片转为base64
 
 ## 步骤
 
